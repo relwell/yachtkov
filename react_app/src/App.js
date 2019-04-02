@@ -29,7 +29,7 @@ function App() {
       }}>
         Generate a New Title
       </button>
-      <p id="thanks">Language model generated with <a href="https://github.com/jsvine/markovify">Markovify</a>. Special thanks to <a href="http://yachtrock.com">Beyond Yacht Rock's</a> <a href="http://www.yachtornyacht.com/">Yacht or Nyacht</a> for the data.</p>
+      <p id="thanks">Language model generated with <a href="https://github.com/jsvine/markovify">Markovify</a>. Special thanks to <a href="http://yachtrock.com">Beyond Yacht Rock's</a> <a href="http://www.yachtornyacht.com/">Yacht or Nyacht</a> for the data. Check out the code on <a href="https://github.com/relwell/yachtkov">GitHub</a>.</p>
     </div>
   );
 }
