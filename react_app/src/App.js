@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get("http://localhost:5000/generate");
+      const { data } = await axios.get("/generate");
       setTitle(data);
     })()
   }, []);
