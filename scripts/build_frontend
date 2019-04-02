@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+cd react_app
+# we need a lot of our dev dependencies to build stuff unfortunately
+yarn install --production=false
+yarn build
