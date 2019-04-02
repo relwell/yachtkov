@@ -24,12 +24,16 @@ function App() {
       <p>Relax to the smooth sounds of...</p>
       <h2>{title}</h2>
       <button onClick={async () => {
-        const { data } = await axios.get("http://localhost:5000/generate");
+        const { data } = await axios.get("/generate");
         setTitle(data);
       }}>
         Generate a New Title
       </button>
-      <p id="thanks">Language model generated with <a href="https://github.com/jsvine/markovify">Markovify</a>. Special thanks to <a href="http://yachtrock.com">Beyond Yacht Rock's</a> <a href="http://www.yachtornyacht.com/">Yacht or Nyacht</a> for the data. Check out the code on <a href="https://github.com/relwell/yachtkov">GitHub</a>.</p>
+      <div id="thanks">
+        <p>Language model generated with <a href="https://github.com/jsvine/markovify">Markovify</a>.</p>
+        <p>Special thanks to <a href="http://yachtrock.com">Beyond Yacht Rock's</a> <a href="http://www.yachtornyacht.com/">Yacht or Nyacht</a> for the data.</p>
+        <p>Check out the code on <a href="https://github.com/relwell/yachtkov">GitHub</a>.</p>
+      </div>
     </div>
   );
 }
