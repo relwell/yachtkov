@@ -9,6 +9,7 @@
 
 @media only screen and (max-width: 768px) {
   .App {
+    margin: 25px;
     padding: 10px;
   }
 }
@@ -24,6 +25,12 @@ button {
 
 #thanks {
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  #thanks {
+    margin-top: 20px;
+  }
 }
 
 #thanks a{

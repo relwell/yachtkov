@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import axios from "axios";
 import './App.css';
 import yacht from './yacht.gif';
 
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-137564463-1');
+    ReactGA.pageview('/');
+}
 
 
 function App() {
@@ -10,6 +16,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
+      initializeReactGA();
       const { data } = await axios.get("/generate");
       setTitle(data);
     })()
@@ -24,6 +31,10 @@ function App() {
       <p>Relax to the smooth sounds of...</p>
       <h2>{title}</h2>
       <button onClick={async () => {
+        ReactGA.event({
+          category: 'User',
+          action: 'Generate Song Title'
+        });
         const { data } = await axios.get("/generate");
         setTitle(data);
       }}>
