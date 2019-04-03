@@ -6,8 +6,9 @@ import yacht from './yacht.gif';
 
 
 function initializeReactGA() {
-    ReactGA.initialize('UA-137564463-1');
-    ReactGA.pageview('/');
+  console.log('initialzing react ga');
+  ReactGA.initialize('UA-137564463-1', { debug: true });
+  ReactGA.pageview('/');
 }
 
 
