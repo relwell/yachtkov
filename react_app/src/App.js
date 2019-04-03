@@ -22,7 +22,7 @@ function App() {
       ReactGA.event({
         category: 'User',
         action: 'Generate Song Title',
-        value: data
+        label: data
       });
     })()
   }, []);
@@ -41,7 +41,7 @@ function App() {
         ReactGA.event({
           category: 'User',
           action: 'Generate Song Title',
-          value: data
+          label: data
         });
       }}>
         Generate a New Title
