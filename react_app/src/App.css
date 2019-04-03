@@ -7,6 +7,12 @@
   color: rgba(200, 200, 20, 1.0);
 }
 
+@media only screen and (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
+
 button {
   background-color: rgba(200, 200, 20, 0.8);
   border-radius: 2px;
