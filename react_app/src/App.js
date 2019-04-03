@@ -19,6 +19,11 @@ function App() {
       initializeReactGA();
       const { data } = await axios.get("/generate");
       setTitle(data);
+      ReactGA.event({
+        category: 'User',
+        action: 'Generate Song Title',
+        value: data
+      });
     })()
   }, []);
 
@@ -31,12 +36,13 @@ function App() {
       <p>Relax to the smooth sounds of...</p>
       <h2>{title}</h2>
       <button onClick={async () => {
-        ReactGA.event({
-          category: 'User',
-          action: 'Generate Song Title'
-        });
         const { data } = await axios.get("/generate");
         setTitle(data);
+        ReactGA.event({
+          category: 'User',
+          action: 'Generate Song Title',
+          value: data
+        });
       }}>
         Generate a New Title
       </button>
