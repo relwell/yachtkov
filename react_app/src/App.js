@@ -49,7 +49,7 @@ function App() {
       <div id="thanks">
         <p>Language model generated with <a href="https://github.com/jsvine/markovify">Markovify</a>.</p>
         <p>Special thanks to <a href="http://yachtrock.com">Beyond Yacht Rock's</a> <a href="http://www.yachtornyacht.com/">Yacht or Nyacht</a> for the data.</p>
-        <p>Check out the code on <a href="https://github.com/relwell/yachtkov">GitHub</a>.</p>
+        <p>Check out the code on <a href="https://github.com/relwell/yachtkov">GitHub</a>, or read the <a href="http://robertelwell.info/2019/04/03/yachtkov.html">blog post</a> about it.</p>
       </div>
     </div>
   );
